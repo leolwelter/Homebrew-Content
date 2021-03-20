@@ -1,0 +1,390 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "HordesoftheAscendant",
+				"abbreviation": "LW-UCI",
+				"full": "Under Cold Iron",
+				"url": "",
+				"authors": [
+					"Leo W."
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1616263978,
+		"dateLastModified": 1616263978
+	},
+	"monster": [
+		{
+			"name": "Ancient Warrior Shell",
+			"source": "HordesoftheAscendant",
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor",
+						"shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d12 + 6",
+				"average": 19
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 16,
+			"dex": 1,
+			"con": 16,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"save": {
+				"con": "+5",
+				"str": "+5"
+			},
+			"passive": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The ancient warrior shell has advantage on an attack roll against a creature if at least one of the ancient warrior shell's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://noads.5e.tools/img/bestiary/MM/Animated Armor.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://noads.5e.tools/img/MM/Animated Armor.png?v=1.123.0",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ancient Corps Beacon",
+			"source": "HordesoftheAscendant",
+			"size": "T",
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true,
+				"walk": 5
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 14,
+			"int": 17,
+			"wis": 16,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"telepathy (60 feet)"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The beacon is a 7th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The beacon has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"*Enchantment spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell message}",
+								"{@spell mind sliver|TCE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}*",
+								"{@spell cure wounds}",
+								"{@spell healing word}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell hold person}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell beacon of hope}",
+								"{@spell mass healing word}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell compulsion}*"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Ascendant Synthesis",
+					"entries": [
+						"Healing spells cast by the beacon heal undead and constructs as if they were living creatures."
+					]
+				},
+				{
+					"name": "Proselytizing Aura (30 feet)",
+					"entries": [
+						"If any willing undead or construct dies within the aura, its matter is instantly recycled, and one creature of the beacon's choice regains ({@dice 2d6}) hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Charm Protocol (Recharges after the Enchanter Casts an Enchantment Spell of 1st level or Higher)",
+					"entries": [
+						"The enchanter tries to magically divert an attack made against it, provided that the attacker is within 30 feet of it and visible to it. The enchanter must decide to do so before the attack hits or misses.",
+						"The attacker must make a {@dc 14} Wisdom saving throw. On a failed save, the attacker targets the creature closest to it, other than the enchanter or itself. If multiple creatures are closest, the attacker chooses which one to target."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://noads.5e.tools/img/bestiary/EGW/Gearkeeper%20Construct.jpg?v=1.123.0"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://noads.5e.tools/img/EGW/Gearkeeper Construct.png?v=1.123.0",
+			"languageTags": [
+				"C",
+				"E",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Ancient Barrage Shell",
+			"source": "HordesoftheAscendant",
+			"page": 214,
+			"size": "T",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					],
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 6",
+				"average": 22
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 40,
+				"canHover": false
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 11,
+			"save": {
+				"dex": "+5",
+				"str": "+2"
+			},
+			"skill": {
+				"perception": "+6",
+				"acrobatics": "+5"
+			},
+			"passive": 16,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Death Burst",
+					"entries": [
+						"When the ancient barrage shell dies, it explodes in a burst of gold death. Each creature within 5 feet of it must then succeed on a {@dc 14} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Barrage Dive {@recharge 4}",
+					"entries": [
+						"The shell opens its internal gas cavity and lets loose a 15 foot cone of poison shrapnel. Creatures in the area must succeed on a {@dc 14} Dexterity saving throw, taking 7 ({@damage 2d6}) poison damage on a failed save, or half as much on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://noads.5e.tools/img/bestiary/MOT/Anvilwrought%20Raptor.jpg?v=1.123.0"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://noads.5e.tools/img/MOT/Anvilwrought Raptor.png?v=1.123.0",
+			"traitTags": [
+				"Death Burst"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasFluff": true
+		}
+	]
+}
